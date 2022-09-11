@@ -11,25 +11,10 @@ for (int i = 0; i < n - 1; i++)
 {
     if (mas[i] > max)
     {
+        smax = max;
         max = mas[i];
     }
-
-    else
-    {
-        for (int j = 0; j < n - 1; j++)
-        {
-            if (mas[j] > smax)
-            {
-                if (max > smax)
-                {
-                    smax = mas[j];
-                }
-            }
-        }
-
-
-
-    }
 }
+
 Console.WriteLine(smax);
 Console.WriteLine(max);
